@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 public class HomeController implements Initializable {
     @FXML
     public Button btnPlay;
+    public Label lblAttempts;
     @FXML
     private Label lblStatus;
     @FXML
@@ -22,6 +23,7 @@ public class HomeController implements Initializable {
     @FXML
     private TextField tfGuessedNumber;
     int mysteryNumber;
+    int attempts = 3;
     int score;
     void randomizeMysteryNumber(){
         Random random = new Random(System.currentTimeMillis());
@@ -42,12 +44,15 @@ public class HomeController implements Initializable {
                 }else if(Math.abs(mysteryNumber-guessedNumber)<5){
                     lblStatus.setText("You are close");
                     lblStatus.setTextFill(Color.ORANGE);
+                    lblAttempts.setText("Attempts: "+(--attempts));
                 }else if((guessedNumber-mysteryNumber)>=5){
                     lblStatus.setText("Too high!");
                     lblStatus.setTextFill(Color.RED);
+                    lblAttempts.setText("Attempts: "+(--attempts));
                 }else{
                     lblStatus.setText("Too low!");
                     lblStatus.setTextFill(Color.RED);
+                    lblAttempts.setText("Attempts: "+(--attempts));
                 }
             } catch (Exception e){
                 lblStatus.setText("Enter only numbers.");
@@ -58,6 +63,13 @@ public class HomeController implements Initializable {
             tfGuessedNumber.clear();
             randomizeMysteryNumber();
             btnPlay.setText("Guess");
+            attempts = 3;
+            lblAttempts.setText("Attempts: "+attempts);
+        }
+        if(attempts==0){
+            lblStatus.setText("You lost.");
+            attempts=3;
+            randomizeMysteryNumber();
         }
     }
     @FXML

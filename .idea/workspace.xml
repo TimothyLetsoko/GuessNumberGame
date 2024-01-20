@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09ac1409-90d5-4f99-9f92-584f463b51db" name="Changes" comment="Added a responsive reset button. Only enabled when the score is above 0.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessNumberGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GuessNumberGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -72,6 +72,15 @@
       <option name="presentableId" value="Default" />
       <updated>1705711340027</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added a responsive reset button. Only enabled when the score is above 0.">
+      <option name="closed" value="true" />
+      <created>1705740457678</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705740457678</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
